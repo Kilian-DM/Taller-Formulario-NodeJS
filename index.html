@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="programa/codigo.js"></script>
+    <link rel="stylesheet" href="diseño.css">
+    <title>Evaluacion Segundo Corte</title>
+  </head>
+  <body>
+    <div>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html">Formulario</a></li>
+        <script src="programa/codigo.js"></script>
+        <li><a href="http://localhost/phpmyadmin/"target="_blank">Ver base de datos</a></li>
+        <li><a href="index.html">Acerca De</a></li>
+      </ul>
+    </div>
+    <div>
+      <h1>Evaluacion Segundo Corte</h1>
+    </div>
+    <div>
+      <form action="http://localhost:3002/users" method="POST">
+      <label>Ingrese el documento</label>
+      <br />
+      <input type="number" name="documento" id="documento" required=""/>
+      <br />
+      <br />
+      <label>Ingrese el nombre</label>
+      <br />
+      <input type="text" name="nombre" id="nombre" required=""/>
+      <br />
+      <br />
+      <label>Ingrese el apellido</label>
+      <br />
+      <input type="text" name="apellido" id="apellido" required=""/>
+      <br />
+      <br />
+      <label>Ingrese el genero</label>
+      <br />
+      <input type="radio" name="genero" id="masculino" value="Masculino" required="">Masculino
+      <input type="radio" name="bono" id="masculino" value="200000">
+      <br>
+      <input type="radio" name="genero" id="femenino" value="femenino"  required=""> Femenino
+      <input type="radio" name="bono" id="femenino" value="300000">
+     <br />
+     <br />
+     <label>Ingrese la fecha inicial en la que se vinculo</label>
+      <br />
+      <input type="date" name="fechainicial" id="fechainicial" required="">
+      <br>
+      <br>
+      <label>Ingrese la fecha final en la que se desvinculo</label>
+      <br />
+      <input type="date" name="fechafinal" id="fechafinal" required="">
+      <br>
+      <br>
+      <input type="submit" value="Ejecutar">
+
+    </form>
+    </div>
+  </body>
+</html>

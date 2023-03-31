@@ -1,0 +1,19 @@
+CREATE DATABASE basedatossegundocorte;
+
+USE basedatossegundocorte;
+
+CREATE TABLE users (
+id int(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+documento DOUBLE NOT NULL, 
+nombre VARCHAR(60) NOT NULL, 
+apellido VARCHAR(60) NOT NULL,
+genero varchar(60)NOT NULL,
+fechainicial DATE NOT NULL,
+fechafinal DATE NOT NULL,
+bono DOUBLE NOT NULL
+);
+
+INSERT INTO users VALUES("01","18482983","Alex","Martinez","Masculino","2018-04-19","2021-02-12","200000");
+INSERT INTO users VALUES("02","56493221","Martin","Fernadez","Masculino","2020-02-22","2022-06-17","200000");
+INSERT INTO users VALUES("03","47757812","Sofia","Lopez","Femenino","2006-08-03","2018-07-26","300000");
+
